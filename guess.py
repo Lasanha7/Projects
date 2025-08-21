@@ -10,7 +10,8 @@ while True:
         else:
             print("Incorrect!")
             continue
-    except EOFError:
+    except (EOFError, ValueError):
         break
+    
 
 
