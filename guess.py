@@ -1,0 +1,16 @@
+import random
+
+number = random.randint(1, 5)
+while True:
+    guess = input("Guess a number between 1 and 5: ")
+    try:
+        if int(guess) == number:
+            print("Correct!")
+            break
+        else:
+            print("Incorrect!")
+            continue
+    except EOFError:
+        break
+
+
